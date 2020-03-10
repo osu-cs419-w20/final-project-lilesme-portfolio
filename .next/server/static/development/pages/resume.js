@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1933,11 +1933,14 @@ const globalStyles = _emotion_core__WEBPACK_IMPORTED_MODULE_0__["css"]`
   }
   font-family: 'Roboto', sans-serif;
   h1 {
-    padding-top: 40px;
+    padding-top: 55px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    color: rgb(9,88,117);
+    color: rgb(176,197,210);
     font-size: 60px;
+  }
+  h2 {
+    text-align: center;
   }
   h3 {
     font-weight: 900;
@@ -1953,13 +1956,13 @@ function Layout(props) {
     css: globalStyles,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 34
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_components_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 35
     },
     __self: this
   }), props.children);
@@ -1994,17 +1997,25 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 const styles = _emotion_core__WEBPACK_IMPORTED_MODULE_0__["css"]`
   @import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');
   font-family: 'Roboto', sans-serif;
-  width: 100%;
   position: absolute;
+  width: 100%;
   z-index: 0;
   top: 0;
+  margin-top: 10px;
   left: 0;
   display: block;
-  background-color: rgb(86,127,204);
+  background-color: rgb(176,197,210);
+  height: 50px;
+  nav {
+    width: 700px;
+    margin:0 auto;
+    list-style:none;
+  }
   ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
+    text-align: center;
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
   }
   li {
     font-size: 30px;
@@ -2028,134 +2039,121 @@ const styles = _emotion_core__WEBPACK_IMPORTED_MODULE_0__["css"]`
 `;
 
 function Navbar() {
-  return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("nav", {
+  return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
     css: styles,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 52
+    },
+    __self: this
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("nav", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 54
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 55
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 56
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 57
     },
     __self: this
   }, "HOME"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 60
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/about",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 61
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 62
     },
     __self: this
   }, "ABOUT"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 65
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/resume",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 66
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 67
     },
     __self: this
   }, "RESUME"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 70
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/github",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 71
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 72
     },
     __self: this
   }, "GITHUB"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 75
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/contact",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 76
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 77
     },
     __self: this
-  }, "CONTACT"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 71
-    },
-    __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/menu",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 72
-    },
-    __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 73
-    },
-    __self: this
-  }, "MENU")))));
+  }, "CONTACT"))))));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Navbar);
@@ -2203,7 +2201,7 @@ const divstyles = _emotion_core__WEBPACK_IMPORTED_MODULE_0__["css"]`
   margin-left: auto;
   margin-right: auto;
   display: block;
-  background-color: #AFCBFF
+  background-color: rgb(163,178,157);
 `;
 const styles = _emotion_core__WEBPACK_IMPORTED_MODULE_0__["css"]`
   text-align: left;
@@ -2213,15 +2211,17 @@ const styles = _emotion_core__WEBPACK_IMPORTED_MODULE_0__["css"]`
   }
 `;
 const linkbutton = _emotion_core__WEBPACK_IMPORTED_MODULE_0__["css"]`
-  float: right;
+  text-align: center;
   a {
-    background-color: rgb(86,127,204, 0.6);
+    background-color: rgb(163,178,157);
     border: none;
     color: white;
     padding: 12px 30px;
     cursor: pointer;
     font-size: 20px;
     text-decoration: none;
+    margin: 5px;
+    border-radius: 10px;
     :hover {
       background-color: grey;
     }
@@ -2232,366 +2232,418 @@ function Resume() {
   return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 43
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 44
     },
     __self: this
   }, "Resume"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
     css: linkbutton,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 45
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("a", {
+    href: "#experience",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46
+    },
+    __self: this
+  }, "Experience"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("a", {
+    href: "#education",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47
+    },
+    __self: this
+  }, "Education"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("a", {
+    href: "#coursework",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48
+    },
+    __self: this
+  }, "Relevant Coursework"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("a", {
+    href: "#skills",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49
+    },
+    __self: this
+  }, "Skills"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("a", {
+    href: "#activities",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50
+    },
+    __self: this
+  }, "Activities/Awards"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("a", {
     href: "/meganlilesresume.pdf",
     download: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 51
     },
     __self: this
   }, "Download Resume")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h1", {
+    id: "middle",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 53
     },
     __self: this
   }, "Experience"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
     css: divstyles,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 54
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
     css: styles,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 48
-    },
-    __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 49
-    },
-    __self: this
-  }, "Web Developer & Systems Admin Intern"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h3", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 50
-    },
-    __self: this
-  }, "Portland General Electric"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("i", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 51
-    },
-    __self: this
-  }, "Apr 2019 - Sep 2019 | Porland, OR"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("ul", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 52
-    },
-    __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 53
-    },
-    __self: this
-  }, "Planned and documented the implementation and replacement of Windows server 2008 R2 DC\u2019s to Windows server 2016 DC\u2019s"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 54
-    },
-    __self: this
-  }, "Created PowerShell scripts to execute multiple Active Directory commands to save time "), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("li", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 55
     },
     __self: this
-  }, "Learned to manage Active Directory Users & Computer, and Group Policy Objects "), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("li", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h2", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 56
     },
     __self: this
-  }, "Worked on a team to design and implement the replacement of the Corporate Intranet Site in Microsoft SharePoint Online to create a better user experience for employees"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("li", {
+  }, "Web Developer & Systems Admin Intern"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h3", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 57
     },
     __self: this
-  }, "Created three digital forms using MS PowerApps for the purpose of quickly submitting feedback, an event and a tool")))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("br", {
+  }, "Portland General Electric"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("i", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58
+    },
+    __self: this
+  }, "Apr 2019 - Sep 2019 | Porland, OR"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("ul", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 59
+    },
+    __self: this
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 60
+    },
+    __self: this
+  }, "Planned and documented the implementation and replacement of Windows server 2008 R2 DC\u2019s to Windows server 2016 DC\u2019s"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("li", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 61
     },
     __self: this
-  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
-    css: divstyles,
+  }, "Created PowerShell scripts to execute multiple Active Directory commands to save time "), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("li", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 62
     },
     __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
-    css: styles,
+  }, "Learned to manage Active Directory Users & Computer, and Group Policy Objects "), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("li", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 63
     },
     __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h2", {
+  }, "Worked on a team to design and implement the replacement of the Corporate Intranet Site in Microsoft SharePoint Online to create a better user experience for employees"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("li", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 64
     },
     __self: this
-  }, "Student Course Developer"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h3", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 65
-    },
-    __self: this
-  }, "Oregon State Ecampus"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("i", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 66
-    },
-    __self: this
-  }, "Nov 2018 - Present | Corvallis, OR"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("ul", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67
-    },
-    __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("li", {
+  }, "Created three digital forms using MS PowerApps for the purpose of quickly submitting feedback, an event and a tool")))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("br", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 68
     },
     __self: this
-  }, "Edited and revised lecture videos for OSU Ecampus"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("li", {
+  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
+    css: divstyles,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 69
     },
     __self: this
-  }, "Used YouTube editor to create video transcripts"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("li", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
+    css: styles,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 70
     },
     __self: this
-  }, "Designed Ecampus courses on Canvas")))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("br", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 71
+    },
+    __self: this
+  }, "Student Course Developer"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 72
+    },
+    __self: this
+  }, "Oregon State Ecampus"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("i", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 73
+    },
+    __self: this
+  }, "Nov 2018 - Present | Corvallis, OR"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("ul", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 74
     },
     __self: this
-  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
-    css: divstyles,
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("li", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 75
     },
     __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
-    css: styles,
+  }, "Edited and revised lecture videos for OSU Ecampus"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("li", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 76
     },
     __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h2", {
+  }, "Used YouTube editor to create video transcripts"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("li", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 77
     },
     __self: this
-  }, "Web Developer"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h3", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 78
-    },
-    __self: this
-  }, "Vino Voyage"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("i", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 79
-    },
-    __self: this
-  }, "Nov 2018 - Jan 2020 | Porland, OR"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("ul", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 80
-    },
-    __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("li", {
+  }, "Designed Ecampus courses on Canvas")))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("br", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 81
-    },
-    __self: this
-  }, "Assisted in developing a new web application designed for wine connoisseurs to create a personalized tasting experience"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 82
-    },
-    __self: this
-  }, "Developed user interface for admins to quickly and easily add, update and delete data"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 83
-    },
-    __self: this
-  }, "Developed both front-end and back-end of application using Python and SQLAlchemy"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 84
-    },
-    __self: this
-  }, "Analyzed code for errors")))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("br", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 88
     },
     __self: this
   }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
     css: divstyles,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89
+      lineNumber: 82
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
     css: styles,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 90
+      lineNumber: 83
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 91
+      lineNumber: 84
     },
     __self: this
-  }, "Sales Associate"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h3", {
+  }, "Web Developer"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 92
+      lineNumber: 85
     },
     __self: this
-  }, "Nike Company Store"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("i", {
+  }, "Vino Voyage"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("i", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 93
+      lineNumber: 86
     },
     __self: this
-  }, "Jul 2017 - Jan 2019 | Beaverton, OR"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("ul", {
+  }, "Nov 2018 - Jan 2020 | Porland, OR"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 94
+      lineNumber: 87
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("li", {
     __source: {
       fileName: _jsxFileName,
+      lineNumber: 88
+    },
+    __self: this
+  }, "Assisted in developing a new web application designed for wine connoisseurs to create a personalized tasting experience"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 89
+    },
+    __self: this
+  }, "Developed user interface for admins to quickly and easily add, update and delete data"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 90
+    },
+    __self: this
+  }, "Developed both front-end and back-end of application using Python and SQLAlchemy"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 91
+    },
+    __self: this
+  }, "Analyzed code for errors")))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("br", {
+    __source: {
+      fileName: _jsxFileName,
       lineNumber: 95
     },
     __self: this
-  }, "Customer assistance on purchases, restocking inventory, sales documentation, cashier"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("li", {
+  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
+    css: divstyles,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 96
     },
     __self: this
-  }, "Worked in a team environment with focus on accelerating revenue growth")))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("br", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
+    css: styles,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 97
+    },
+    __self: this
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 98
+    },
+    __self: this
+  }, "Sales Associate"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 99
+    },
+    __self: this
+  }, "Nike Company Store"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("i", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 100
     },
     __self: this
-  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
+  }, "Jul 2017 - Jan 2019 | Beaverton, OR"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("ul", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 101
     },
     __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h1", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("li", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 102
+    },
+    __self: this
+  }, "Customer assistance on purchases, restocking inventory, sales documentation, cashier"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 103
+    },
+    __self: this
+  }, "Worked in a team environment with focus on accelerating revenue growth")))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 107
+    },
+    __self: this
+  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 108
+    },
+    __self: this
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h1", {
+    id: "education",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 109
     },
     __self: this
   }, "Education"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
     css: divstyles,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 103
+      lineNumber: 110
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
     css: styles,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 104
+      lineNumber: 111
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 105
+      lineNumber: 112
     },
     __self: this
   }, "B.S. Computer Science"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 106
+      lineNumber: 113
     },
     __self: this
   }, "Oregon State University"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h4", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 107
+      lineNumber: 114
     },
     __self: this
   }, " Concentration: UX/UI"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("i", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 108
+      lineNumber: 115
     },
     __self: this
   }, "GPA: 3.48 |Exp: June 2020"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h1", {
+    id: "courses",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 111
+      lineNumber: 118
     },
     __self: this
   }, "Relevant Coursework"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_components_Courses__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 112
+      lineNumber: 119
     },
     __self: this
-  })));
+  })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h1", {
+    id: "skills",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 121
+    },
+    __self: this
+  }, "Skills"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h1", {
+    id: "activities",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 122
+    },
+    __self: this
+  }, "Activities & Awards"));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Resume);
 
 /***/ }),
 
-/***/ 5:
+/***/ 6:
 /*!***********************************!*\
   !*** multi ./src/pages/resume.js ***!
   \***********************************/

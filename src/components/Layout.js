@@ -11,11 +11,14 @@ const globalStyles = css`
   }
   font-family: 'Roboto', sans-serif;
   h1 {
-    padding-top: 40px;
+    padding-top: 55px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    color: rgb(9,88,117);
+    color: rgb(176,197,210);
     font-size: 60px;
+  }
+  h2 {
+    text-align: center;
   }
   h3 {
     font-weight: 900;

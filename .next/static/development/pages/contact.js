@@ -11793,7 +11793,7 @@ var _jsxFileName = "/Users/meganliles/CS419/Assignments/final-project-lilesme-po
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  @import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');\n  body {\n    margin: 0;\n    font-family: 'Roboto', sans-serif;\n  }\n  font-family: 'Roboto', sans-serif;\n  h1 {\n    padding-top: 40px;\n    text-align: center;\n    font-family: 'Roboto', sans-serif;\n    color: rgb(9,88,117);\n    font-size: 60px;\n  }\n  h3 {\n    font-weight: 900;\n  }\n  p {\n    text-align: center;\n  }\n  line-height: 20px;\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  @import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');\n  body {\n    margin: 0;\n    font-family: 'Roboto', sans-serif;\n  }\n  font-family: 'Roboto', sans-serif;\n  h1 {\n    padding-top: 55px;\n    text-align: center;\n    font-family: 'Roboto', sans-serif;\n    color: rgb(176,197,210);\n    font-size: 60px;\n  }\n  h2 {\n    text-align: center;\n  }\n  h3 {\n    font-weight: 900;\n  }\n  p {\n    text-align: center;\n  }\n  line-height: 20px;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -11813,13 +11813,13 @@ function Layout(props) {
     css: globalStyles,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 34
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_Navbar__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 35
     },
     __self: this
   }), props.children);
@@ -11849,7 +11849,7 @@ var _jsxFileName = "/Users/meganliles/CS419/Assignments/final-project-lilesme-po
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  @import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');\n  font-family: 'Roboto', sans-serif;\n  width: 100%;\n  position: absolute;\n  z-index: 0;\n  top: 0;\n  left: 0;\n  display: block;\n  background-color: rgb(86,127,204);\n  ul {\n      list-style-type: none;\n      margin: 0;\n      padding: 0;\n  }\n  li {\n    font-size: 30px;\n    float: left;\n  }\n  a {\n    display: block;\n    color: white;\n    padding: 14px 16px;\n    text-decoration: none;\n    text-align: center;\n    &:hover {\n      background-color: rgb(199, 198, 193);\n      color: rgb(58, 63, 64);\n    }\n    &.active {\n        background-color: rgb(199, 198, 193);\n        color: rgb(58, 63, 64);\n    }\n  }\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  @import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');\n  font-family: 'Roboto', sans-serif;\n  position: absolute;\n  width: 100%;\n  z-index: 0;\n  top: 0;\n  margin-top: 10px;\n  left: 0;\n  display: block;\n  background-color: rgb(176,197,210);\n  height: 50px;\n  nav {\n    width: 700px;\n    margin:0 auto;\n    list-style:none;\n  }\n  ul {\n    text-align: center;\n    margin: 0;\n    list-style-type: none;\n    padding: 0;\n  }\n  li {\n    font-size: 30px;\n    float: left;\n  }\n  a {\n    display: block;\n    color: white;\n    padding: 14px 16px;\n    text-decoration: none;\n    text-align: center;\n    &:hover {\n      background-color: rgb(199, 198, 193);\n      color: rgb(58, 63, 64);\n    }\n    &.active {\n        background-color: rgb(199, 198, 193);\n        color: rgb(58, 63, 64);\n    }\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -11865,134 +11865,121 @@ function _templateObject() {
 var styles = Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"])(_templateObject());
 
 function Navbar() {
-  return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("nav", {
+  return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
     css: styles,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 52
+    },
+    __self: this
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("nav", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 54
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 55
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 56
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 57
     },
     __self: this
   }, "HOME"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 60
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
     href: "/about",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 61
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 62
     },
     __self: this
   }, "ABOUT"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 65
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
     href: "/resume",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 66
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 67
     },
     __self: this
   }, "RESUME"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 70
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
     href: "/github",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 71
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 72
     },
     __self: this
   }, "GITHUB"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 75
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
     href: "/contact",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 76
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 77
     },
     __self: this
-  }, "CONTACT"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 71
-    },
-    __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
-    href: "/menu",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 72
-    },
-    __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 73
-    },
-    __self: this
-  }, "MENU")))));
+  }, "CONTACT"))))));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Navbar);
@@ -12018,7 +12005,7 @@ var _jsxFileName = "/Users/meganliles/CS419/Assignments/final-project-lilesme-po
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 function _templateObject3() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  position: relative;\n  font-size: 20px;\n  margin-left: auto;\n  margin-right: auto;\n  background-color: rgb(9,87,117, 0.6);\n  border-radius: 15px;\n  width: 700px;\n  height: 700px;\n  padding: 10px;\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  margin-top: 60px;\n  background-image: url('flowers.jpeg');\n  position: fixed;\n  min-height: 1000px;\n  min-width: 100%;\n  opacity: 0.95;\n  background-attachment: fixed;\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: 100%;\n  h1 {\n    color: white;\n  }\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -12028,7 +12015,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  text-align: center;\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  background-color: white;\n  width: 900px;\n  height: 500px;\n  border-radius: 25px;\n  margin-left: auto;\n  margin-right: auto;\n  padding: 20px;\n  text-align: center;\n  input, textarea {\n    @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');\n    font-family: 'Nunito', sans-serif;\n    font-size: 20px;\n    width: 800px;\n    border-radius: 10px;\n    border: solid rgb(198, 205, 197) 1px;\n    background-color: white;\n    height: 50px;\n    margin: 7px;\n    :hover{\n      background-color: lightgrey;\n    }\n  }\n  .message {\n    height: 250px;\n    vertical-align: top;\n  }\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -12038,7 +12025,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  width: 600px;\n  height: 600px;\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  background-color: rgb(179,143,132);\n  width: 1000px;\n  height: 650px;\n  border-radius: 25px;\n  margin-left: auto;\n  margin-right: auto;\n  padding: 20px;\n  margin-top: 100px;\n  h2 {\n    text-align: center;\n    color: white;\n    font-size: 30px;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -12051,127 +12038,104 @@ function _templateObject() {
 
 
 
-var commentstyle = Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"])(_templateObject());
-var labelstyle = Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"])(_templateObject2());
-var formstyle = Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"])(_templateObject3());
+var background = Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"])(_templateObject());
+var form = Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"])(_templateObject2());
+var pic = Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"])(_templateObject3());
 
 function Contact() {
   return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 68
     },
     __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h1", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+    css: pic,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 69
     },
     __self: this
-  }, "Contact Me"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-    css: formstyle,
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+    css: background,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 70
     },
     __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("form", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 71
+    },
+    __self: this
+  }, "Send Me A Message!"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("form", {
     action: "mailto:meganliles426@gmail.com",
     method: "post",
     enctype: "text/plain",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 72
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-    css: labelstyle,
+    css: form,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 73
     },
     __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 34
-    },
-    __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("label", {
-    "for": "name",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 35
-    },
-    __self: this
-  }, "Name:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("input", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("input", {
     type: "text",
+    placeholder: "Name",
     name: "name",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 74
     },
     __self: this
   }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 74
     },
     __self: this
-  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("label", {
-    "for": "email",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37
-    },
-    __self: this
-  }, "Email:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("input", {
+  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("input", {
     type: "text",
+    placeholder: "Email",
     name: "mail",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 75
     },
     __self: this
   }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 75
     },
     __self: this
-  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("label", {
-    "for": "comment",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 39
-    },
-    __self: this
-  }, "Comment:"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("br", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 39
-    },
-    __self: this
-  })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("input", {
-    css: commentstyle,
+  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("textarea", {
+    "class": "message",
     type: "text",
+    placeholder: "Message",
     name: "comment",
     size: "50",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 76
     },
     __self: this
   }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 76
     },
     __self: this
   }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 76
     },
     __self: this
   }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("input", {
@@ -12179,17 +12143,17 @@ function Contact() {
     value: "Send",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 77
     },
     __self: this
-  })))));
+  }))))));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Contact);
 
 /***/ }),
 
-/***/ 5:
+/***/ 1:
 /*!********************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fcontact&absolutePagePath=%2FUsers%2Fmeganliles%2FCS419%2FAssignments%2Ffinal-project-lilesme-portfolio%2Fsrc%2Fpages%2Fcontact.js ***!
   \********************************************************************************************************************************************************************************/
@@ -12212,5 +12176,5 @@ module.exports = dll_0fb095e325d7ebf261c3;
 
 /***/ })
 
-},[[5,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=contact.js.map

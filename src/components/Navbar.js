@@ -6,17 +6,25 @@ import Link from 'next/link';
 const styles = css `
   @import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');
   font-family: 'Roboto', sans-serif;
-  width: 100%;
   position: absolute;
+  width: 100%;
   z-index: 0;
   top: 0;
+  margin-top: 10px;
   left: 0;
   display: block;
-  background-color: rgb(86,127,204);
+  background-color: rgb(176,197,210);
+  height: 50px;
+  nav {
+    width: 700px;
+    margin:0 auto;
+    list-style:none;
+  }
   ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
+    text-align: center;
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
   }
   li {
     font-size: 30px;
@@ -41,7 +49,8 @@ const styles = css `
 
 function Navbar() {
   return (
-    <nav css={styles}>
+    <div css={styles}>
+      <nav>
         <ul>
           <li>
             <Link href="/">
@@ -68,13 +77,9 @@ function Navbar() {
               <a>CONTACT</a>
             </Link>
           </li>
-          <li>
-            <Link href="/menu">
-              <a>MENU</a>
-            </Link>
-          </li>
         </ul>
-    </nav>
+      </nav>
+    </div>
   )
 }
 

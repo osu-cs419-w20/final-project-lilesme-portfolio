@@ -11,7 +11,7 @@ const divstyles = css `
   margin-left: auto;
   margin-right: auto;
   display: block;
-  background-color: #AFCBFF
+  background-color: rgb(163,178,157);
 `;
 
 const styles = css`
@@ -22,15 +22,17 @@ const styles = css`
   }
 `;
 const linkbutton = css`
-  float: right;
+  text-align: center;
   a {
-    background-color: rgb(86,127,204, 0.6);
+    background-color: rgb(163,178,157);
     border: none;
     color: white;
     padding: 12px 30px;
     cursor: pointer;
     font-size: 20px;
     text-decoration: none;
+    margin: 5px;
+    border-radius: 10px;
     :hover {
       background-color: grey;
     }
@@ -41,9 +43,14 @@ function Resume() {
     <Layout>
       <h1>Resume</h1>
       <div css={linkbutton}>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#coursework">Relevant Coursework</a>
+        <a href="#skills">Skills</a>
+        <a href="#activities">Activities/Awards</a>
         <a href="/meganlilesresume.pdf" download>Download Resume</a>
       </div>
-      <h1>Experience</h1>
+      <h1 id="middle">Experience</h1>
       <div css={divstyles}>
         <div css={styles}>
           <h2>Web Developer & Systems Admin Intern</h2>
@@ -99,7 +106,7 @@ function Resume() {
       </div>
       <br/>
       <div>
-      <h1>Education</h1>
+      <h1 id="education">Education</h1>
       <div css={divstyles}>
         <div css={styles}>
           <h2>B.S. Computer Science</h2>
@@ -108,9 +115,11 @@ function Resume() {
           <i>GPA: 3.48 |Exp: June 2020</i>
         </div>
       </div>
-      <h1>Relevant Coursework</h1>
+      <h1 id="courses">Relevant Coursework</h1>
         <Courses />
       </div>
+      <h1 id="skills">Skills</h1>
+      <h1 id="activities">Activities & Awards</h1>
     </Layout>
   );
 }

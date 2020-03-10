@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1824,11 +1824,14 @@ const globalStyles = _emotion_core__WEBPACK_IMPORTED_MODULE_0__["css"]`
   }
   font-family: 'Roboto', sans-serif;
   h1 {
-    padding-top: 40px;
+    padding-top: 55px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    color: rgb(9,88,117);
+    color: rgb(176,197,210);
     font-size: 60px;
+  }
+  h2 {
+    text-align: center;
   }
   h3 {
     font-weight: 900;
@@ -1844,13 +1847,13 @@ function Layout(props) {
     css: globalStyles,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 34
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_components_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 35
     },
     __self: this
   }), props.children);
@@ -1885,17 +1888,25 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 const styles = _emotion_core__WEBPACK_IMPORTED_MODULE_0__["css"]`
   @import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');
   font-family: 'Roboto', sans-serif;
-  width: 100%;
   position: absolute;
+  width: 100%;
   z-index: 0;
   top: 0;
+  margin-top: 10px;
   left: 0;
   display: block;
-  background-color: rgb(86,127,204);
+  background-color: rgb(176,197,210);
+  height: 50px;
+  nav {
+    width: 700px;
+    margin:0 auto;
+    list-style:none;
+  }
   ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
+    text-align: center;
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
   }
   li {
     font-size: 30px;
@@ -1919,134 +1930,121 @@ const styles = _emotion_core__WEBPACK_IMPORTED_MODULE_0__["css"]`
 `;
 
 function Navbar() {
-  return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("nav", {
+  return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
     css: styles,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 52
+    },
+    __self: this
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("nav", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 54
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 55
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 56
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 57
     },
     __self: this
   }, "HOME"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 60
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/about",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 61
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 62
     },
     __self: this
   }, "ABOUT"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 65
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/resume",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 66
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 67
     },
     __self: this
   }, "RESUME"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 70
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/github",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 71
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 72
     },
     __self: this
   }, "GITHUB"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 75
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/contact",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 76
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 77
     },
     __self: this
-  }, "CONTACT"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 71
-    },
-    __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/menu",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 72
-    },
-    __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 73
-    },
-    __self: this
-  }, "MENU")))));
+  }, "CONTACT"))))));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Navbar);
@@ -2062,35 +2060,248 @@ function Navbar() {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Layout */ "./src/components/Layout.js");
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @emotion/core */ "@emotion/core");
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Layout */ "./src/components/Layout.js");
 var _jsxFileName = "/Users/meganliles/CS419/Assignments/final-project-lilesme-portfolio/src/pages/index.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+/** @jsx jsx */
 
 
+
+const parallax1 = _emotion_core__WEBPACK_IMPORTED_MODULE_0__["css"]`
+  margin-top: 70px;
+  background-image: url('trees.jpeg');
+  min-height: 1000px;
+  min-width: 100%;
+  opacity: 0.85;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+`;
+const parallax2 = _emotion_core__WEBPACK_IMPORTED_MODULE_0__["css"]`
+  margin-top: 55px;
+  background-image: url('bridge.jpeg');
+  min-height: 800px;
+  width: 100%;
+  opacity: 0.85;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+`;
+const parallax3 = _emotion_core__WEBPACK_IMPORTED_MODULE_0__["css"]`
+  margin-top: 55px;
+  background-image: url('rainy.jpg');
+  min-height: 800px;
+  width: 100%;
+  opacity: 0.85;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+`;
+const caption = _emotion_core__WEBPACK_IMPORTED_MODULE_0__["css"]`
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+`;
+const border = _emotion_core__WEBPACK_IMPORTED_MODULE_0__["css"]`
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 30px;
+  letter-spacing: 10px;
+`;
+const words = _emotion_core__WEBPACK_IMPORTED_MODULE_0__["css"]`
+  color: #777;
+  background-color: white;
+  padding: 10px;
+  text-align: justify;
+  font-size: 24px;
+  line-height: 30px;
+`;
+const paragraph = _emotion_core__WEBPACK_IMPORTED_MODULE_0__["css"]`
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  color: #777;
+  background-color: white;
+  padding: 10px;
+  text-align: justify;
+`;
+const subtitle = _emotion_core__WEBPACK_IMPORTED_MODULE_0__["css"]`
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #111;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+`;
+const arrows = _emotion_core__WEBPACK_IMPORTED_MODULE_0__["css"]`
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  animation: blinker 1s linear infinite;
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+  }
+}
+`;
 
 function Home() {
-  return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 109
     },
     __self: this
-  }, __jsx("h1", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
+    css: parallax1,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 110
     },
     __self: this
-  }, "Home"));
+  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
+    css: caption,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 111
+    },
+    __self: this
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("span", {
+    css: border,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 112
+    },
+    __self: this
+  }, "MEGAN LILES"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 113
+    },
+    __self: this
+  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 114
+    },
+    __self: this
+  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 115
+    },
+    __self: this
+  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
+    css: arrows,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 116
+    },
+    __self: this
+  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 116
+    },
+    __self: this
+  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
+    css: arrows,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 117
+    },
+    __self: this
+  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 117
+    },
+    __self: this
+  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
+    css: arrows,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 118
+    },
+    __self: this
+  })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
+    css: words,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 120
+    },
+    __self: this
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h3", {
+    css: subtitle,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 121
+    },
+    __self: this
+  }, "WELCOME"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
+    css: paragraph,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 122
+    },
+    __self: this
+  }, "Feel free to look around and check out my resume and github projects!")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
+    css: parallax2,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 124
+    },
+    __self: this
+  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
+    css: words,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 125
+    },
+    __self: this
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
+    css: paragraph,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 126
+    },
+    __self: this
+  }, "I am currently actively looking for full time positions in the Computer Science world as a Web Developer, Software Engineer, Mobile App Developer or anything in the UX industry! I will be graduating June 2020 from Oregon State University with a Bachelor's in Computer Science.")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
+    css: parallax3,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 132
+    },
+    __self: this
+  }));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Home);
 
 /***/ }),
 
-/***/ 3:
+/***/ 5:
 /*!**********************************!*\
   !*** multi ./src/pages/index.js ***!
   \**********************************/

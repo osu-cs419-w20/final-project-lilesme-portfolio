@@ -6639,6 +6639,18 @@ module.exports = bind.call(Function.call, Object.prototype.hasOwnProperty);
 
 /***/ }),
 
+/***/ "./node_modules/next/dist/build/polyfills/fetch/index.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/next/dist/build/polyfills/fetch/index.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* globals self */var fetch=self.fetch.bind(self);module.exports=fetch;module.exports.default=module.exports;
+
+/***/ }),
+
 /***/ "./node_modules/next/dist/build/polyfills/object-assign.js":
 /*!***********************************************************************************************************************!*\
   !*** delegated ./node_modules/next/dist/build/polyfills/object-assign.js from dll-reference dll_0fb095e325d7ebf261c3 ***!
@@ -11793,7 +11805,7 @@ var _jsxFileName = "/Users/meganliles/CS419/Assignments/final-project-lilesme-po
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  @import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');\n  body {\n    margin: 0;\n    font-family: 'Roboto', sans-serif;\n  }\n  font-family: 'Roboto', sans-serif;\n  h1 {\n    padding-top: 40px;\n    text-align: center;\n    font-family: 'Roboto', sans-serif;\n    color: rgb(9,88,117);\n    font-size: 60px;\n  }\n  h3 {\n    font-weight: 900;\n  }\n  p {\n    text-align: center;\n  }\n  line-height: 20px;\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  @import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');\n  body {\n    margin: 0;\n    font-family: 'Roboto', sans-serif;\n  }\n  font-family: 'Roboto', sans-serif;\n  h1 {\n    padding-top: 55px;\n    text-align: center;\n    font-family: 'Roboto', sans-serif;\n    color: rgb(176,197,210);\n    font-size: 60px;\n  }\n  h2 {\n    text-align: center;\n  }\n  h3 {\n    font-weight: 900;\n  }\n  p {\n    text-align: center;\n  }\n  line-height: 20px;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -11813,13 +11825,13 @@ function Layout(props) {
     css: globalStyles,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 34
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_Navbar__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 35
     },
     __self: this
   }), props.children);
@@ -11849,7 +11861,7 @@ var _jsxFileName = "/Users/meganliles/CS419/Assignments/final-project-lilesme-po
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  @import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');\n  font-family: 'Roboto', sans-serif;\n  width: 100%;\n  position: absolute;\n  z-index: 0;\n  top: 0;\n  left: 0;\n  display: block;\n  background-color: rgb(86,127,204);\n  ul {\n      list-style-type: none;\n      margin: 0;\n      padding: 0;\n  }\n  li {\n    font-size: 30px;\n    float: left;\n  }\n  a {\n    display: block;\n    color: white;\n    padding: 14px 16px;\n    text-decoration: none;\n    text-align: center;\n    &:hover {\n      background-color: rgb(199, 198, 193);\n      color: rgb(58, 63, 64);\n    }\n    &.active {\n        background-color: rgb(199, 198, 193);\n        color: rgb(58, 63, 64);\n    }\n  }\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  @import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');\n  font-family: 'Roboto', sans-serif;\n  position: absolute;\n  width: 100%;\n  z-index: 0;\n  top: 0;\n  margin-top: 10px;\n  left: 0;\n  display: block;\n  background-color: rgb(176,197,210);\n  height: 50px;\n  nav {\n    width: 700px;\n    margin:0 auto;\n    list-style:none;\n  }\n  ul {\n    text-align: center;\n    margin: 0;\n    list-style-type: none;\n    padding: 0;\n  }\n  li {\n    font-size: 30px;\n    float: left;\n  }\n  a {\n    display: block;\n    color: white;\n    padding: 14px 16px;\n    text-decoration: none;\n    text-align: center;\n    &:hover {\n      background-color: rgb(199, 198, 193);\n      color: rgb(58, 63, 64);\n    }\n    &.active {\n        background-color: rgb(199, 198, 193);\n        color: rgb(58, 63, 64);\n    }\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -11865,137 +11877,236 @@ function _templateObject() {
 var styles = Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"])(_templateObject());
 
 function Navbar() {
-  return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("nav", {
+  return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
     css: styles,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 52
+    },
+    __self: this
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("nav", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 54
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 55
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 56
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 57
     },
     __self: this
   }, "HOME"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 60
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
     href: "/about",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 61
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 62
     },
     __self: this
   }, "ABOUT"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 65
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
     href: "/resume",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 66
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 67
     },
     __self: this
   }, "RESUME"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 70
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
     href: "/github",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 71
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 72
     },
     __self: this
   }, "GITHUB"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 75
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
     href: "/contact",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 76
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 77
     },
     __self: this
-  }, "CONTACT"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 71
-    },
-    __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
-    href: "/menu",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 72
-    },
-    __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 73
-    },
-    __self: this
-  }, "MENU")))));
+  }, "CONTACT"))))));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Navbar);
+
+/***/ }),
+
+/***/ "./src/components/Spotify.js":
+/*!***********************************!*\
+  !*** ./src/components/Spotify.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! isomorphic-unfetch */ "./node_modules/next/dist/build/polyfills/fetch/index.js");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/meganliles/CS419/Assignments/final-project-lilesme-portfolio/src/components/Spotify.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+function Spotify() {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+      songs = _useState[0],
+      setSongs = _useState[1];
+
+  var _useState2 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      error = _useState2[0],
+      setError = _useState2[1];
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      loading = _useState3[0],
+      setLoading = _useState3[1];
+
+  function fetchSpotifyData() {
+    var responseBody = {};
+    setLoading(true);
+
+    try {
+      var response = isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1___default()("https://api.spotify.com/v1/me/top/artists?time_range=medium_term&limit=5&offset=5\" -H \"Accept: application/json\" -H \"Content-Type: application/json\" -H \"Authorization: Bearer BQDEuD5-GV7XCVv6xJdrVsoHwyb1B9MNT8pafW1dqI-YaLbDbqgvw33paOK5DIsvfv1E4fc2eSMHIesn2B-gSN7MdcP6UEW2oobRsFU7doGE8gJCF5U0_JIo4l8AxxtE510pO9quobE_8ng2GhzPIQ\")", {
+        signal: controller.signal
+      });
+      responseBody = response.json();
+    } catch (e) {
+      if (e instanceof DOMException) {
+        console.log("== HTTP request aborted");
+      } else {
+        setError(true);
+        console.log(e);
+      }
+    }
+
+    if (!ignore) {
+      setError(false);
+      setLoading(false);
+      setSongs(responseBody.items || []);
+    } else {
+      console.log("== ignoring results");
+    }
+
+    fetchSpotifyData();
+    return function () {
+      controller.abort();
+      ignore = true;
+    };
+  }
+
+  return __jsx("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42
+    },
+    __self: this
+  }, error && __jsx(ErrorContainer, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43
+    },
+    __self: this
+  }, "Error!"), loading ? __jsx(Spinner, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 45
+    },
+    __self: this
+  }) : __jsx("ul", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47
+    },
+    __self: this
+  }, songs.map(function (song, key) {
+    return __jsx("li", {
+      key: song[key].id,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 49
+      },
+      __self: this
+    }, __jsx("a", {
+      href: song[key].preview_url,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 50
+      },
+      __self: this
+    }, song[key].name));
+  })));
+}
+
+;
+/* harmony default export */ __webpack_exports__["default"] = (Spotify);
 
 /***/ }),
 
@@ -12013,9 +12124,40 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Layout */ "./src/components/Layout.js");
+/* harmony import */ var _components_Spotify__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Spotify */ "./src/components/Spotify.js");
 
 var _jsxFileName = "/Users/meganliles/CS419/Assignments/final-project-lilesme-portfolio/src/pages/about.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
+
+function _templateObject5() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  text-align: center;\n"]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  display: inline-block;\n  img {\n    width: 250px;\n    height: 310px;\n    border-radius: 15px;\n    padding: 10px;\n  }\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  h2 {\n    text-align: center;\n    font-size: 40px;\n  }\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
 
 function _templateObject2() {
   var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  padding: 10px;\n  display: inline-block;\n  width: 800px;\n"]);
@@ -12028,7 +12170,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  display: inline-block;\n  margin-left: 40px;\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  display: inline-block;\n  margin-left: 40px;\n  border: solid black 2px;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -12041,27 +12183,38 @@ function _templateObject() {
 
 
 
+
 var pic = Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"])(_templateObject());
 var bio = Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"])(_templateObject2());
+var divs = Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"])(_templateObject3());
+var hobbies = Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"])(_templateObject4());
+var imagecontainer = Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"])(_templateObject5());
 
 function About() {
   return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 40
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 41
     },
     __self: this
   }, "About Me"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+    css: divs,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42
+    },
+    __self: this
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
     css: pic,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 43
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("img", {
@@ -12071,30 +12224,177 @@ function About() {
     height: "300",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 44
     },
     __self: this
   })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
     css: bio,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 46
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 47
     },
     __self: this
-  }, "Hi! My name is Megan and I am a web development enthusiast. I have a passion for UX and UI. I love making people feel good about the websites they interact with.")));
+  }, "Hi! My name is Megan and I am a web development enthusiast. I have a passion for UX and UI. I love making people feel good about the websites they interact with.")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+    css: imagecontainer,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51
+    },
+    __self: this
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52
+    },
+    __self: this
+  }, "HOBBIES"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+    css: hobbies,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53
+    },
+    __self: this
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("img", {
+    src: "/golf.jpg",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54
+    },
+    __self: this
+  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55
+    },
+    __self: this
+  }, "Golfing")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+    css: hobbies,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57
+    },
+    __self: this
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("img", {
+    src: "/hike.jpg",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58
+    },
+    __self: this
+  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 59
+    },
+    __self: this
+  }, "Hiking")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+    css: hobbies,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 61
+    },
+    __self: this
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("img", {
+    src: "/wakeboard.jpg",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 62
+    },
+    __self: this
+  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 63
+    },
+    __self: this
+  }, "Water Sports")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+    css: hobbies,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 65
+    },
+    __self: this
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("img", {
+    src: "/camping.jpg",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 66
+    },
+    __self: this
+  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 67
+    },
+    __self: this
+  }, "Camping"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 70
+    },
+    __self: this
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 71
+    },
+    __self: this
+  }, "ACTIVITIES")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 73
+    },
+    __self: this
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 74
+    },
+    __self: this
+  }, "ACCOMPLISHMENTS")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 76
+    },
+    __self: this
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 77
+    },
+    __self: this
+  }, "INSTAGRAM")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 79
+    },
+    __self: this
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 80
+    },
+    __self: this
+  }, "SPOTIFY"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_Spotify__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 81
+    },
+    __self: this
+  }))));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (About);
 
 /***/ }),
 
-/***/ 7:
+/***/ 5:
 /*!****************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fabout&absolutePagePath=%2FUsers%2Fmeganliles%2FCS419%2FAssignments%2Ffinal-project-lilesme-portfolio%2Fsrc%2Fpages%2Fabout.js ***!
   \****************************************************************************************************************************************************************************/
@@ -12117,5 +12417,5 @@ module.exports = dll_0fb095e325d7ebf261c3;
 
 /***/ })
 
-},[[7,"static/runtime/webpack.js"]]]);
+},[[5,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=about.js.map

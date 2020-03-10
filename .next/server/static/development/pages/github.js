@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 8);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1795,6 +1795,69 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
+/***/ "./src/components/ErrorContainer.js":
+/*!******************************************!*\
+  !*** ./src/components/ErrorContainer.js ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @emotion/styled */ "@emotion/styled");
+/* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_emotion_styled__WEBPACK_IMPORTED_MODULE_0__);
+
+const ErrorContainer = _emotion_styled__WEBPACK_IMPORTED_MODULE_0___default.a.div`
+  padding: 10px;
+  background-color: #ff7c7c;
+  color: #fff;
+`;
+/* harmony default export */ __webpack_exports__["default"] = (ErrorContainer);
+
+/***/ }),
+
+/***/ "./src/components/FormComponents.js":
+/*!******************************************!*\
+  !*** ./src/components/FormComponents.js ***!
+  \******************************************/
+/*! exports provided: Input, TextArea, Button */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Input", function() { return Input; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TextArea", function() { return TextArea; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Button", function() { return Button; });
+/* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @emotion/styled */ "@emotion/styled");
+/* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_emotion_styled__WEBPACK_IMPORTED_MODULE_0__);
+
+const Input = _emotion_styled__WEBPACK_IMPORTED_MODULE_0___default.a.input`
+  border: 1px solid #ababab;
+  padding: 5px;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 3px;
+  width: 250px;
+`;
+const TextArea = Input.withComponent('textarea');
+const Button = _emotion_styled__WEBPACK_IMPORTED_MODULE_0___default.a.button`
+  background-color: rgb(179,143,132);
+  color: #fff;
+  border: 2px solid rgb(179,143,132);
+  border-radius: 3px;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+  &:hover {
+    background-color: #71b5ed;
+  }
+`;
+
+
+/***/ }),
+
 /***/ "./src/components/Layout.js":
 /*!**********************************!*\
   !*** ./src/components/Layout.js ***!
@@ -1824,11 +1887,14 @@ const globalStyles = _emotion_core__WEBPACK_IMPORTED_MODULE_0__["css"]`
   }
   font-family: 'Roboto', sans-serif;
   h1 {
-    padding-top: 40px;
+    padding-top: 55px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    color: rgb(9,88,117);
+    color: rgb(176,197,210);
     font-size: 60px;
+  }
+  h2 {
+    text-align: center;
   }
   h3 {
     font-weight: 900;
@@ -1844,13 +1910,13 @@ function Layout(props) {
     css: globalStyles,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 34
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_components_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 35
     },
     __self: this
   }), props.children);
@@ -1885,17 +1951,25 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 const styles = _emotion_core__WEBPACK_IMPORTED_MODULE_0__["css"]`
   @import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');
   font-family: 'Roboto', sans-serif;
-  width: 100%;
   position: absolute;
+  width: 100%;
   z-index: 0;
   top: 0;
+  margin-top: 10px;
   left: 0;
   display: block;
-  background-color: rgb(86,127,204);
+  background-color: rgb(176,197,210);
+  height: 50px;
+  nav {
+    width: 700px;
+    margin:0 auto;
+    list-style:none;
+  }
   ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
+    text-align: center;
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
   }
   li {
     font-size: 30px;
@@ -1919,137 +1993,220 @@ const styles = _emotion_core__WEBPACK_IMPORTED_MODULE_0__["css"]`
 `;
 
 function Navbar() {
-  return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("nav", {
+  return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
     css: styles,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 52
+    },
+    __self: this
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("nav", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 54
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 55
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 56
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 57
     },
     __self: this
   }, "HOME"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 60
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/about",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 61
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 62
     },
     __self: this
   }, "ABOUT"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 65
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/resume",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 66
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 67
     },
     __self: this
   }, "RESUME"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 70
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/github",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 71
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 72
     },
     __self: this
   }, "GITHUB"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 75
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/contact",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 76
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 77
     },
     __self: this
-  }, "CONTACT"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 71
-    },
-    __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/menu",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 72
-    },
-    __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 73
-    },
-    __self: this
-  }, "MENU")))));
+  }, "CONTACT"))))));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Navbar);
+
+/***/ }),
+
+/***/ "./src/components/Spinner.js":
+/*!***********************************!*\
+  !*** ./src/components/Spinner.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @emotion/styled */ "@emotion/styled");
+/* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_emotion_styled__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @emotion/core */ "@emotion/core");
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "/Users/meganliles/CS419/Assignments/final-project-lilesme-portfolio/src/components/Spinner.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+/*
+ * Spinner derived from https://tobiasahlin.com/spinkit/.
+ */
+
+
+
+const SpinnerContainer = _emotion_styled__WEBPACK_IMPORTED_MODULE_1___default.a.div`
+  display: inline-block;
+  text-align: center;
+`;
+const bounceDelay = _emotion_core__WEBPACK_IMPORTED_MODULE_2__["keyframes"]`
+  0%, 80%, 100% {
+    transform: scale(0);
+  } 40% {
+    transform: scale(1.0);
+  }
+`;
+const Dot = _emotion_styled__WEBPACK_IMPORTED_MODULE_1___default.a.div`
+  display: inline-block;
+  border-radius: 100%;
+  width: ${props => props.size}px;
+  height: ${props => props.size}px;
+  margin: ${props => props.size / 2}px;
+  background-color: ${props => props.color};
+
+  animation: ${bounceDelay} infinite 1.4s ease-in-out both;
+
+  &:nth-of-type(1) {
+    animation-delay: -0.32s;
+  }
+  &:nth-of-type(2) {
+    animation-delay: -0.16s;
+  }
+`;
+
+function Spinner({
+  size,
+  color
+}) {
+  size = size || 12;
+  color = color || '#333';
+  return __jsx(SpinnerContainer, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 45
+    },
+    __self: this
+  }, __jsx(Dot, {
+    size: size,
+    color: color,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46
+    },
+    __self: this
+  }), __jsx(Dot, {
+    size: size,
+    color: color,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47
+    },
+    __self: this
+  }), __jsx(Dot, {
+    size: size,
+    color: color,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48
+    },
+    __self: this
+  }));
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Spinner);
 
 /***/ }),
 
@@ -2062,35 +2219,250 @@ function Navbar() {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Layout */ "./src/components/Layout.js");
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @emotion/core */ "@emotion/core");
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "react-router-dom");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_router_dom__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var query_string__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! query-string */ "query-string");
+/* harmony import */ var query_string__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(query_string__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! next/router */ "next/router");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _components_FormComponents__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/FormComponents */ "./src/components/FormComponents.js");
+/* harmony import */ var _components_Spinner__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/Spinner */ "./src/components/Spinner.js");
+/* harmony import */ var _components_ErrorContainer__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/ErrorContainer */ "./src/components/ErrorContainer.js");
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Layout */ "./src/components/Layout.js");
 var _jsxFileName = "/Users/meganliles/CS419/Assignments/final-project-lilesme-portfolio/src/pages/github.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+/** @jsx jsx */
 
 
+
+
+
+
+
+
+
+
+
+const search = _emotion_core__WEBPACK_IMPORTED_MODULE_0__["css"]`
+  @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+`;
+const results = _emotion_core__WEBPACK_IMPORTED_MODULE_0__["css"]`
+  display: inline-block;
+  text-align: center;
+  width: 800px;
+  ul {
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+  }
+  a {
+    text-decoration:  none;
+    background-color: lightgrey;
+    border: lightgrey 1px;
+    width: 90px;
+    color: black;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px;
+  }
+  p {
+    display: inline-block;
+    padding: 10px;
+  }
+  h4 {
+    display: inline-block;
+    padding: 10px;
+  }
+`;
 
 function Github() {
-  return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  const router = Object(next_router__WEBPACK_IMPORTED_MODULE_5__["useRouter"])();
+  const query = router.query.q;
+  const {
+    0: inputQuery,
+    1: setInputQuery
+  } = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(query || "");
+  const {
+    0: repos,
+    1: setRepos
+  } = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]);
+  const {
+    0: error,
+    1: setError
+  } = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false);
+  const {
+    0: loading,
+    1: setLoading
+  } = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false);
+  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(() => {
+    if (query) {
+      let ignore = false;
+      const controller = new AbortController();
+
+      async function fetchSearchResults() {
+        let responseBody = {};
+        setLoading(true); //console.log("== Fetching search results for query:", query);
+        //setRepos(null);
+
+        try {
+          const response = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default()(`https://api.github.com/search/repositories?q={${query}+in:file+user:lilesme&sort=stars`, {
+            signal: controller.signal
+          });
+          responseBody = await response.json();
+        } catch (e) {
+          if (e instanceof DOMException) {
+            console.log("== HTTP request aborted");
+          } else {
+            setError(true);
+            console.log(e);
+          }
+        }
+
+        if (!ignore) {
+          setError(false);
+          setLoading(false);
+          setRepos(responseBody.items || []);
+        } else {
+          console.log("== ignoring results");
+        } //setRepos(responseBody.items || []);
+
+      }
+
+      fetchSearchResults();
+      return () => {
+        controller.abort();
+        ignore = true;
+      };
+    }
+  }, [query]);
+  return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 109
     },
     __self: this
-  }, __jsx("h1", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_components_Layout__WEBPACK_IMPORTED_MODULE_9__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 110
     },
     __self: this
-  }, "Github"));
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h1", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 111
+    },
+    __self: this
+  }, "Github"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 112
+    },
+    __self: this
+  }, "Search my repositories on Github!")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
+    css: search,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 114
+    },
+    __self: this
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("form", {
+    onSubmit: e => {
+      e.preventDefault();
+      router.push(`${router.pathname}?q=${inputQuery}`);
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 115
+    },
+    __self: this
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_components_FormComponents__WEBPACK_IMPORTED_MODULE_6__["Input"], {
+    value: inputQuery,
+    onChange: e => setInputQuery(e.target.value),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 119
+    },
+    __self: this
+  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_components_FormComponents__WEBPACK_IMPORTED_MODULE_6__["Button"], {
+    type: "submit",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 123
+    },
+    __self: this
+  }, "Search")), error && Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_components_ErrorContainer__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 125
+    },
+    __self: this
+  }, "Error!"), loading ? Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_components_Spinner__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 127
+    },
+    __self: this
+  }) : Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
+    css: results,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 129
+    },
+    __self: this
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("ul", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 130
+    },
+    __self: this
+  }, repos.map(repo => Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("li", {
+    key: repo.id,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 132
+    },
+    __self: this
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h4", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 133
+    },
+    __self: this
+  }, repo.full_name), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 133
+    },
+    __self: this
+  }, repo.description), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("a", {
+    href: repo.html_url,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 133
+    },
+    __self: this
+  }, "View Repo")))))));
 }
 
+;
 /* harmony default export */ __webpack_exports__["default"] = (Github);
 
 /***/ }),
 
-/***/ 8:
+/***/ 4:
 /*!***********************************!*\
   !*** multi ./src/pages/github.js ***!
   \***********************************/
@@ -2110,6 +2482,17 @@ module.exports = __webpack_require__(/*! /Users/meganliles/CS419/Assignments/fin
 /***/ (function(module, exports) {
 
 module.exports = require("@emotion/core");
+
+/***/ }),
+
+/***/ "@emotion/styled":
+/*!**********************************!*\
+  !*** external "@emotion/styled" ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@emotion/styled");
 
 /***/ }),
 
@@ -2168,6 +2551,28 @@ module.exports = require("core-js/library/fn/weak-map");
 
 /***/ }),
 
+/***/ "isomorphic-unfetch":
+/*!*************************************!*\
+  !*** external "isomorphic-unfetch" ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("isomorphic-unfetch");
+
+/***/ }),
+
+/***/ "next/router":
+/*!******************************!*\
+  !*** external "next/router" ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/router");
+
+/***/ }),
+
 /***/ "prop-types":
 /*!*****************************!*\
   !*** external "prop-types" ***!
@@ -2190,6 +2595,17 @@ module.exports = require("prop-types-exact");
 
 /***/ }),
 
+/***/ "query-string":
+/*!*******************************!*\
+  !*** external "query-string" ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("query-string");
+
+/***/ }),
+
 /***/ "react":
 /*!************************!*\
   !*** external "react" ***!
@@ -2209,6 +2625,17 @@ module.exports = require("react");
 /***/ (function(module, exports) {
 
 module.exports = require("react-is");
+
+/***/ }),
+
+/***/ "react-router-dom":
+/*!***********************************!*\
+  !*** external "react-router-dom" ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-router-dom");
 
 /***/ }),
 
