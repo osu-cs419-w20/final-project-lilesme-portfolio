@@ -14,7 +14,6 @@ const globalStyles = css`
     padding-top: 55px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    color: rgb(176,197,210);
     font-size: 60px;
   }
   h2 {

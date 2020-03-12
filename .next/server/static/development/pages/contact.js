@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1827,7 +1827,6 @@ const globalStyles = _emotion_core__WEBPACK_IMPORTED_MODULE_0__["css"]`
     padding-top: 55px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    color: rgb(176,197,210);
     font-size: 60px;
   }
   h2 {
@@ -1847,13 +1846,13 @@ function Layout(props) {
     css: globalStyles,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 33
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_components_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 34
     },
     __self: this
   }), props.children);
@@ -1892,11 +1891,10 @@ const styles = _emotion_core__WEBPACK_IMPORTED_MODULE_0__["css"]`
   width: 100%;
   z-index: 0;
   top: 0;
-  margin-top: 10px;
   left: 0;
   display: block;
-  background-color: rgb(176,197,210);
-  height: 50px;
+  background-color: rgb(158,176,197);
+  height: 65px;
   nav {
     width: 700px;
     margin:0 auto;
@@ -1909,6 +1907,7 @@ const styles = _emotion_core__WEBPACK_IMPORTED_MODULE_0__["css"]`
     padding: 0;
   }
   li {
+    line-height: 36px;
     font-size: 30px;
     float: left;
   }
@@ -2073,7 +2072,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 const background = _emotion_core__WEBPACK_IMPORTED_MODULE_0__["css"]`
-  background-color: rgb(179,143,132);
+  background-color: rgb(181,177,117);
   width: 1000px;
   height: 650px;
   border-radius: 25px;
@@ -2117,7 +2116,7 @@ const form = _emotion_core__WEBPACK_IMPORTED_MODULE_0__["css"]`
 `;
 const pic = _emotion_core__WEBPACK_IMPORTED_MODULE_0__["css"]`
   margin-top: 60px;
-  background-image: url('flowers.jpeg');
+  background-image: url('leaf.jpg');
   position: fixed;
   min-height: 1000px;
   min-width: 100%;
@@ -2242,7 +2241,7 @@ function Contact() {
 
 /***/ }),
 
-/***/ 3:
+/***/ 7:
 /*!************************************!*\
   !*** multi ./src/pages/contact.js ***!
   \************************************/

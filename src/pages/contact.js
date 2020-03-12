@@ -4,7 +4,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 
 const background = css `
-  background-color: rgb(179,143,132);
+  background-color: rgb(181,177,117);
   width: 1000px;
   height: 650px;
   border-radius: 25px;
@@ -49,7 +49,7 @@ const form = css `
 `;
 const pic = css `
   margin-top: 60px;
-  background-image: url('flowers.jpeg');
+  background-image: url('leaf.jpg');
   position: fixed;
   min-height: 1000px;
   min-width: 100%;

@@ -29,15 +29,7 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/github": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
     "/index": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/resume": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

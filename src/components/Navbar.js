@@ -10,11 +10,10 @@ const styles = css `
   width: 100%;
   z-index: 0;
   top: 0;
-  margin-top: 10px;
   left: 0;
   display: block;
-  background-color: rgb(176,197,210);
-  height: 50px;
+  background-color: rgb(158,176,197);
+  height: 65px;
   nav {
     width: 700px;
     margin:0 auto;
@@ -27,6 +26,7 @@ const styles = css `
     padding: 0;
   }
   li {
+    line-height: 36px;
     font-size: 30px;
     float: left;
   }

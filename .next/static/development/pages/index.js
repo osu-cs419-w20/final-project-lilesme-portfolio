@@ -11793,7 +11793,7 @@ var _jsxFileName = "/Users/meganliles/CS419/Assignments/final-project-lilesme-po
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  @import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');\n  body {\n    margin: 0;\n    font-family: 'Roboto', sans-serif;\n  }\n  font-family: 'Roboto', sans-serif;\n  h1 {\n    padding-top: 55px;\n    text-align: center;\n    font-family: 'Roboto', sans-serif;\n    color: rgb(176,197,210);\n    font-size: 60px;\n  }\n  h2 {\n    text-align: center;\n  }\n  h3 {\n    font-weight: 900;\n  }\n  p {\n    text-align: center;\n  }\n  line-height: 20px;\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  @import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');\n  body {\n    margin: 0;\n    font-family: 'Roboto', sans-serif;\n  }\n  font-family: 'Roboto', sans-serif;\n  h1 {\n    padding-top: 55px;\n    text-align: center;\n    font-family: 'Roboto', sans-serif;\n    font-size: 60px;\n  }\n  h2 {\n    text-align: center;\n  }\n  h3 {\n    font-weight: 900;\n  }\n  p {\n    text-align: center;\n  }\n  line-height: 20px;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -11813,13 +11813,13 @@ function Layout(props) {
     css: globalStyles,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 33
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_Navbar__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 34
     },
     __self: this
   }), props.children);
@@ -11849,7 +11849,7 @@ var _jsxFileName = "/Users/meganliles/CS419/Assignments/final-project-lilesme-po
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  @import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');\n  font-family: 'Roboto', sans-serif;\n  position: absolute;\n  width: 100%;\n  z-index: 0;\n  top: 0;\n  margin-top: 10px;\n  left: 0;\n  display: block;\n  background-color: rgb(176,197,210);\n  height: 50px;\n  nav {\n    width: 700px;\n    margin:0 auto;\n    list-style:none;\n  }\n  ul {\n    text-align: center;\n    margin: 0;\n    list-style-type: none;\n    padding: 0;\n  }\n  li {\n    font-size: 30px;\n    float: left;\n  }\n  a {\n    display: block;\n    color: white;\n    padding: 14px 16px;\n    text-decoration: none;\n    text-align: center;\n    &:hover {\n      background-color: rgb(199, 198, 193);\n      color: rgb(58, 63, 64);\n    }\n    &.active {\n        background-color: rgb(199, 198, 193);\n        color: rgb(58, 63, 64);\n    }\n  }\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  @import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');\n  font-family: 'Roboto', sans-serif;\n  position: absolute;\n  width: 100%;\n  z-index: 0;\n  top: 0;\n  left: 0;\n  display: block;\n  background-color: rgb(158,176,197);\n  height: 65px;\n  nav {\n    width: 700px;\n    margin:0 auto;\n    list-style:none;\n  }\n  ul {\n    text-align: center;\n    margin: 0;\n    list-style-type: none;\n    padding: 0;\n  }\n  li {\n    line-height: 36px;\n    font-size: 30px;\n    float: left;\n  }\n  a {\n    display: block;\n    color: white;\n    padding: 14px 16px;\n    text-decoration: none;\n    text-align: center;\n    &:hover {\n      background-color: rgb(199, 198, 193);\n      color: rgb(58, 63, 64);\n    }\n    &.active {\n        background-color: rgb(199, 198, 193);\n        color: rgb(58, 63, 64);\n    }\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -12004,18 +12004,8 @@ __webpack_require__.r(__webpack_exports__);
 var _jsxFileName = "/Users/meganliles/CS419/Assignments/final-project-lilesme-portfolio/src/pages/index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
-function _templateObject9() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  border: solid white;\n  border-width: 0 3px 3px 0;\n  display: inline-block;\n  padding: 3px;\n  transform: rotate(45deg);\n  -webkit-transform: rotate(45deg);\n  animation: blinker 1s linear infinite;\n  @keyframes blinker {\n    50% {\n      opacity: 0;\n  }\n}\n"]);
-
-  _templateObject9 = function _templateObject9() {
-    return data;
-  };
-
-  return data;
-}
-
 function _templateObject8() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  text-align: center;\n  letter-spacing: 5px;\n  text-transform: uppercase;\n  font-weight: 900;\n  color: #111;\n  display: block;\n  margin-block-start: 1em;\n  margin-block-end: 1em;\n  margin-inline-start: 0px;\n  margin-inline-end: 0px;\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  border: solid white;\n  border-width: 0 3px 3px 0;\n  display: inline-block;\n  padding: 3px;\n  transform: rotate(45deg);\n  -webkit-transform: rotate(45deg);\n  animation: blinker 1s linear infinite;\n  @keyframes blinker {\n    50% {\n      opacity: 0;\n  }\n}\n"]);
 
   _templateObject8 = function _templateObject8() {
     return data;
@@ -12025,7 +12015,7 @@ function _templateObject8() {
 }
 
 function _templateObject7() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  display: block;\n  margin-block-start: 1em;\n  margin-block-end: 1em;\n  margin-inline-start: 0px;\n  margin-inline-end: 0px;\n  color: #777;\n  background-color: white;\n  padding: 10px;\n  text-align: justify;\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  text-align: center;\n  letter-spacing: 5px;\n  text-transform: uppercase;\n  font-weight: 900;\n  color: #111;\n  display: block;\n  margin-block-start: 1em;\n  margin-block-end: 1em;\n  margin-inline-start: 0px;\n  margin-inline-end: 0px;\n"]);
 
   _templateObject7 = function _templateObject7() {
     return data;
@@ -12035,7 +12025,7 @@ function _templateObject7() {
 }
 
 function _templateObject6() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  color: #777;\n  background-color: white;\n  padding: 10px;\n  text-align: justify;\n  font-size: 24px;\n  line-height: 30px;\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  display: block;\n  margin-block-start: 1em;\n  margin-block-end: 1em;\n  margin-inline-start: 0px;\n  margin-inline-end: 0px;\n  color: #777;\n  background-color: white;\n  text-align: justify;\n  padding: 20px;\n"]);
 
   _templateObject6 = function _templateObject6() {
     return data;
@@ -12045,7 +12035,7 @@ function _templateObject6() {
 }
 
 function _templateObject5() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  background-color: #111;\n  color: #fff;\n  padding: 18px;\n  font-size: 30px;\n  letter-spacing: 10px;\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  color: #777;\n  background-color: white;\n  text-align: center;\n  font-size: 24px;\n  line-height: 24px;\n"]);
 
   _templateObject5 = function _templateObject5() {
     return data;
@@ -12055,7 +12045,7 @@ function _templateObject5() {
 }
 
 function _templateObject4() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  position: absolute;\n  left: 0;\n  top: 50%;\n  width: 100%;\n  text-align: center;\n  color: #000;\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  background-color: #111;\n  color: #fff;\n  padding: 18px;\n  font-size: 30px;\n  letter-spacing: 10px;\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -12065,7 +12055,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  margin-top: 55px;\n  background-image: url('rainy.jpg');\n  min-height: 800px;\n  width: 100%;\n  opacity: 0.85;\n  background-attachment: fixed;\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: 100%;\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  position: absolute;\n  left: 0;\n  top: 50%;\n  width: 100%;\n  text-align: center;\n  color: #000;\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -12075,7 +12065,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  margin-top: 55px;\n  background-image: url('bridge.jpeg');\n  min-height: 800px;\n  width: 100%;\n  opacity: 0.85;\n  background-attachment: fixed;\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: 100%;\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  margin-top: 55px;\n  background-image: url('osu-background.jpg');\n  min-height: 990px;\n  min-width: 100%;\n  background-attachment: fixed;\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: 100%;\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -12085,7 +12075,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  margin-top: 70px;\n  background-image: url('trees.jpeg');\n  min-height: 1000px;\n  min-width: 100%;\n  opacity: 0.85;\n  background-attachment: fixed;\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: 100%;\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  margin-top: 60px;\n  background-image: url('trees.jpeg');\n  min-height: 1100px;\n  min-width: 100%;\n  background-attachment: fixed;\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: 100%;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -12100,150 +12090,156 @@ function _templateObject() {
 
 var parallax1 = Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"])(_templateObject());
 var parallax2 = Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"])(_templateObject2());
-var parallax3 = Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"])(_templateObject3());
-var caption = Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"])(_templateObject4());
-var border = Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"])(_templateObject5());
-var words = Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"])(_templateObject6());
-var paragraph = Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"])(_templateObject7());
-var subtitle = Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"])(_templateObject8());
-var arrows = Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"])(_templateObject9());
+var caption = Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"])(_templateObject3());
+var border = Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"])(_templateObject4());
+var words = Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"])(_templateObject5());
+var paragraph = Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"])(_templateObject6());
+var subtitle = Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"])(_templateObject7());
+var arrows = Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"])(_templateObject8());
 
 function Home() {
   return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109
+      lineNumber: 96
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
     css: parallax1,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110
+      lineNumber: 97
     },
     __self: this
   }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
     css: caption,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 111
+      lineNumber: 98
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("span", {
     css: border,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 112
+      lineNumber: 99
     },
     __self: this
   }, "MEGAN LILES"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 113
+      lineNumber: 100
     },
     __self: this
   }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 114
+      lineNumber: 101
     },
     __self: this
   }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 115
+      lineNumber: 102
     },
     __self: this
   }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
     css: arrows,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 116
+      lineNumber: 103
     },
     __self: this
   }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 116
+      lineNumber: 103
     },
     __self: this
   }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
     css: arrows,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 117
+      lineNumber: 104
     },
     __self: this
   }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 117
+      lineNumber: 104
     },
     __self: this
   }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
     css: arrows,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 118
+      lineNumber: 105
     },
     __self: this
   })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
     css: words,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 120
+      lineNumber: 107
     },
     __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h3", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("span", {
     css: subtitle,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 121
+      lineNumber: 108
     },
     __self: this
-  }, "WELCOME"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
-    css: paragraph,
+  }, "WEB DEVELOPER"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("span", {
+    css: subtitle,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 122
+      lineNumber: 109
     },
     __self: this
-  }, "Feel free to look around and check out my resume and github projects!")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+  }, "MOBILE DEVELOPER"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("span", {
+    css: subtitle,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 110
+    },
+    __self: this
+  }, "UX/UI DESIGN")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
     css: parallax2,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 124
+      lineNumber: 112
     },
     __self: this
   }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
     css: words,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 125
+      lineNumber: 113
     },
     __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h3", {
+    css: subtitle,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 114
+    },
+    __self: this
+  }, "WELCOME"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("p", {
     css: paragraph,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 126
+      lineNumber: 115
     },
     __self: this
-  }, "I am currently actively looking for full time positions in the Computer Science world as a Web Developer, Software Engineer, Mobile App Developer or anything in the UX industry! I will be graduating June 2020 from Oregon State University with a Bachelor's in Computer Science.")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
-    css: parallax3,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 132
-    },
-    __self: this
-  }));
+  }, "I am currently actively looking for full time positions in the Computer Science world as a Web Developer, Software Engineer, Mobile App Developer or anything in the UX industry! I will be graduating June 2020 from Oregon State University with a Bachelor's in Computer Science. Feel free to look around and check out my resume and github projects!")));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Home);
 
 /***/ }),
 
-/***/ 3:
+/***/ 1:
 /*!***********************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fmeganliles%2FCS419%2FAssignments%2Ffinal-project-lilesme-portfolio%2Fsrc%2Fpages%2Findex.js ***!
   \***********************************************************************************************************************************************************************/
@@ -12266,5 +12262,5 @@ module.exports = dll_0fb095e325d7ebf261c3;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

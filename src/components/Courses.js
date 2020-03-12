@@ -2,46 +2,36 @@
 import { jsx, css } from '@emotion/core';
 import React from 'react';
 import courses from '../data/courses.json';
-const tablestyle = css`
+
+const style = css`
   @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
   font-family: 'Montserrat', sans-serif;
-  margin-left: auto;
-  margin-right: auto;
-  th {
-    background-color: rgb(175,203,255);
-    color: white;
-    border-bottom: 1px solid #ddd;
+  ul {
+    -moz-column-count: 2;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 20px;
+    column-count: 2;
+    column-gap: 20px;
+    width: 800px;
   }
-  td {
-    padding: 3px;
-  }
-  width: 90%;
-  tr:nth-child(even) {background-color: rgb(175,203,255, 0.6);}
-  tr:hover {background-color: #f5f5f5;}
-  td {
-    border-bottom: 1px solid #ddd;
-    min-width: 70px !important;
-  }
+  float: left !important;
+
 `;
 
 
 function Courses() {
   return (
-    <div css={tablestyle}>
-      <table>
-        <th>Course</th>
-        <th>Name</th>
-        <th>Description</th>
+    <div css={style}>
+      <ul>
       {courses && courses.map((course, key) => {
         return (
-          <tr>
-            <td>{courses[key].courseId}</td>
-            <td>{courses[key].name}</td>
-            <td>{courses[key].description}</td>
-          </tr>
+          <li>
+            {courses[key].name}
+          </li>
         );
       })}
-      </table>
+      </ul>
     </div>
   );
 }

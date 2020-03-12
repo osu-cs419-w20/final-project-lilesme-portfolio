@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1827,7 +1827,6 @@ const globalStyles = _emotion_core__WEBPACK_IMPORTED_MODULE_0__["css"]`
     padding-top: 55px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    color: rgb(176,197,210);
     font-size: 60px;
   }
   h2 {
@@ -1847,13 +1846,13 @@ function Layout(props) {
     css: globalStyles,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 33
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_components_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 34
     },
     __self: this
   }), props.children);
@@ -1892,11 +1891,10 @@ const styles = _emotion_core__WEBPACK_IMPORTED_MODULE_0__["css"]`
   width: 100%;
   z-index: 0;
   top: 0;
-  margin-top: 10px;
   left: 0;
   display: block;
-  background-color: rgb(176,197,210);
-  height: 50px;
+  background-color: rgb(158,176,197);
+  height: 65px;
   nav {
     width: 700px;
     margin:0 auto;
@@ -1909,6 +1907,7 @@ const styles = _emotion_core__WEBPACK_IMPORTED_MODULE_0__["css"]`
     padding: 0;
   }
   li {
+    line-height: 36px;
     font-size: 30px;
     float: left;
   }
@@ -2073,11 +2072,10 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 const parallax1 = _emotion_core__WEBPACK_IMPORTED_MODULE_0__["css"]`
-  margin-top: 70px;
+  margin-top: 60px;
   background-image: url('trees.jpeg');
-  min-height: 1000px;
+  min-height: 1100px;
   min-width: 100%;
-  opacity: 0.85;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -2085,21 +2083,9 @@ const parallax1 = _emotion_core__WEBPACK_IMPORTED_MODULE_0__["css"]`
 `;
 const parallax2 = _emotion_core__WEBPACK_IMPORTED_MODULE_0__["css"]`
   margin-top: 55px;
-  background-image: url('bridge.jpeg');
-  min-height: 800px;
-  width: 100%;
-  opacity: 0.85;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
-`;
-const parallax3 = _emotion_core__WEBPACK_IMPORTED_MODULE_0__["css"]`
-  margin-top: 55px;
-  background-image: url('rainy.jpg');
-  min-height: 800px;
-  width: 100%;
-  opacity: 0.85;
+  background-image: url('osu-background.jpg');
+  min-height: 990px;
+  min-width: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -2123,10 +2109,9 @@ const border = _emotion_core__WEBPACK_IMPORTED_MODULE_0__["css"]`
 const words = _emotion_core__WEBPACK_IMPORTED_MODULE_0__["css"]`
   color: #777;
   background-color: white;
-  padding: 10px;
-  text-align: justify;
+  text-align: center;
   font-size: 24px;
-  line-height: 30px;
+  line-height: 24px;
 `;
 const paragraph = _emotion_core__WEBPACK_IMPORTED_MODULE_0__["css"]`
   display: block;
@@ -2136,8 +2121,8 @@ const paragraph = _emotion_core__WEBPACK_IMPORTED_MODULE_0__["css"]`
   margin-inline-end: 0px;
   color: #777;
   background-color: white;
-  padding: 10px;
   text-align: justify;
+  padding: 20px;
 `;
 const subtitle = _emotion_core__WEBPACK_IMPORTED_MODULE_0__["css"]`
   text-align: center;
@@ -2170,138 +2155,145 @@ function Home() {
   return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109
+      lineNumber: 96
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
     css: parallax1,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110
+      lineNumber: 97
     },
     __self: this
   }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
     css: caption,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 111
+      lineNumber: 98
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("span", {
     css: border,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 112
+      lineNumber: 99
     },
     __self: this
   }, "MEGAN LILES"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 113
+      lineNumber: 100
     },
     __self: this
   }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 114
+      lineNumber: 101
     },
     __self: this
   }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 115
+      lineNumber: 102
     },
     __self: this
   }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
     css: arrows,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 116
+      lineNumber: 103
     },
     __self: this
   }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 116
+      lineNumber: 103
     },
     __self: this
   }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
     css: arrows,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 117
+      lineNumber: 104
     },
     __self: this
   }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 117
+      lineNumber: 104
     },
     __self: this
   }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
     css: arrows,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 118
+      lineNumber: 105
     },
     __self: this
   })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
     css: words,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 120
+      lineNumber: 107
     },
     __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h3", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("span", {
     css: subtitle,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 121
+      lineNumber: 108
     },
     __self: this
-  }, "WELCOME"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
-    css: paragraph,
+  }, "WEB DEVELOPER"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("span", {
+    css: subtitle,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 122
+      lineNumber: 109
     },
     __self: this
-  }, "Feel free to look around and check out my resume and github projects!")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
+  }, "MOBILE DEVELOPER"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("span", {
+    css: subtitle,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 110
+    },
+    __self: this
+  }, "UX/UI DESIGN")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
     css: parallax2,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 124
+      lineNumber: 112
     },
     __self: this
   }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
     css: words,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 125
+      lineNumber: 113
     },
     __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h3", {
+    css: subtitle,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 114
+    },
+    __self: this
+  }, "WELCOME"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
     css: paragraph,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 126
+      lineNumber: 115
     },
     __self: this
-  }, "I am currently actively looking for full time positions in the Computer Science world as a Web Developer, Software Engineer, Mobile App Developer or anything in the UX industry! I will be graduating June 2020 from Oregon State University with a Bachelor's in Computer Science.")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
-    css: parallax3,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 132
-    },
-    __self: this
-  }));
+  }, "I am currently actively looking for full time positions in the Computer Science world as a Web Developer, Software Engineer, Mobile App Developer or anything in the UX industry! I will be graduating June 2020 from Oregon State University with a Bachelor's in Computer Science. Feel free to look around and check out my resume and github projects!")));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Home);
 
 /***/ }),
 
-/***/ 5:
+/***/ 3:
 /*!**********************************!*\
   !*** multi ./src/pages/index.js ***!
   \**********************************/

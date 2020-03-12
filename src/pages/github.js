@@ -23,7 +23,7 @@ const search = css `
 `;
 const results = css `
   display: inline-block;
-  text-align: center;
+  text-align: center
   width: 800px;
   ul {
     list-style: none;
